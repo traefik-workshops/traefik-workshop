@@ -10,8 +10,8 @@ You need to have Kubernetes cluster that you can connect to, Helm3 installed and
 
 1. [Installing Traefik Proxy](exercise-1)
 2. [Traefik Dashboard](exercise-2)
-3. [Deploying test application on Kubernetes](excersise-3)
-4. [Creating Kubernetes Ingress HTTP](excecise-4)
+3. [Deploying test application on Kubernetes](exercise-3)
+4. [Creating Kubernetes Ingress HTTP](excercise-4)
 5. [Adding extra configuration to values.yaml](exercise-5)
 6. [Deploying Traefik with the new configuration](exercise-6)
 7. [Creating Kubernetes Ingress HTTP](exercise-7)
