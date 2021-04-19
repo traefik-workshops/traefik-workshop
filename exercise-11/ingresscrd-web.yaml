@@ -1,0 +1,14 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: whoami
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: Host(`crd.<REPLACE_ME>)
+      services:
+        - kind: Service
+          name: whoami-svc
+          port: 80

@@ -1,4 +1,4 @@
-# Deploying test application 
+# 3. Deploying test application 
 
 ## Review and deploy the WHOAMI deployment 
 

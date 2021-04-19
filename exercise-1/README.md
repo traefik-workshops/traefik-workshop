@@ -1,5 +1,4 @@
-# Installing Traefik using official Helm Chart
-
+# 1. Installing Traefik using official Helm Chart
 
 ## Add Traefik's Helm Chart
 
