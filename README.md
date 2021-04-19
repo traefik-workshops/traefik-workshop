@@ -19,7 +19,7 @@ You need to have Kubernetes cluster that you can connect to, Helm3 installed and
 9. [Assigning Middleware to the Kubernetes Ingress HTTP](exercise-9)
 10. [Scaling up / down the application](exercise-10)
 11. [Creating Kubernets CRD (HTTP)](exercise-11)
-12. [Creating Kubernetes CRD (HTTS)](exercise-12)
+12. [Creating Kubernetes CRD (HTTPS)](exercise-12)
 13. [Creating Basic Auth Middleware with Kubernetes Secrets](exercise-13)
 14. [Kubernetes CRD for Dashboard](exercise-14)
 15. [Enabling /metrics endpoint](exercise-15)
