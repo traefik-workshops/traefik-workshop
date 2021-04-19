@@ -5,7 +5,7 @@
 Please note, that that file contains more Kubernets objects that will be created after applying:
 
 - the matching rule has added condition 
-- there are security headers attached to the routers
+- there are security headers attached to the routers, middleware headers
 - there are extra SAN domains added 
 - there is TLS object created 
 

@@ -13,3 +13,10 @@ kubectl apply -f redirect-scheme.yaml
 ```
 kubectl get middlewares.traefik.containo.us 
 ```
+- see the dashboard - please note, what is the name convention for the middleware we created <namespace>-<name-of-the-middleware>@<provider> 
+
+## Note:
+
+- when permanent is set to true
+- all GET will have a 301
+- all the other requests will have a 308

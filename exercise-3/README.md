@@ -33,3 +33,10 @@ kubectl get endpoints
 kubectl describe endpoints whoami
 ```
 
+- run temporary pod to see whether you can connect to the whoami-svc service
+
+```
+ kubectl run -it --rm --image alpine -- sh
+ apk update
+ apk add curl 
+```

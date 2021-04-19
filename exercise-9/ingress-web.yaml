@@ -7,7 +7,7 @@ metadata:
     traefik.ingress.kubernetes.io/router.middlewares: default-redirectscheme@kubernetescrd
 spec:
   rules:
-    - host: whoami.tr.demo.traefiklabs.tech
+    - host: whoami.wrks.demo.traefiklabs.tech
       http:
         paths:
           - path: /

@@ -7,19 +7,19 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`crd.<REPLACE_ME>`) || Host(`crda.<REPLACE_ME>`)
+      match: Host(`crd.wrks.demo.traefiklabs.tech`) || Host(`crda.wrks.demo.traefiklabs.tech`)
       services:
         - kind: Service
           name: whoami-svc
           port: 80
       middlewares:
-        - name: default-security@kubernetescrd    
+        - name: default-security@kubernetescrd
   tls:
     certResolver: le
     domains:
-      - main: crd.<REPLACE_ME>
+      - main: crd.wrks.demo.traefiklabs.tech
         sans:
-          - crda.<REPLACE_ME>
+          - crda.wrks.demo.traefiklabs.tech
     options:
       name: tlsoptions
 
@@ -54,4 +54,4 @@ spec:
     # HSTS HTTP Strict Transport Security
     stsIncludeSubdomains: true    # If the stsIncludeSubdomains is set to true, the includeSubDomains directive is appended to the Strict-Transport-Security header. all subdomains have to HSTS complained
     stsPreload: true              # https://hstspreload.org/
-    stsSeconds: 31536000          #  To be able to use HSTS Preloading, this parameter must be at least 31536000 seconds  
+    stsSeconds: 31536000          #  To be able to use HSTS Preloading, this parameter must be at least 31536000 seconds

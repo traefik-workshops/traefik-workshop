@@ -1,0 +1,15 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: metrics
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`m.wrks.demo.traefiklabs.tech`)
+      services:
+        - kind: TraefikService
+          name: prometheus@internal
+  tls:
+    certResolver: le

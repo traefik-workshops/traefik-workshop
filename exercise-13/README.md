@@ -3,14 +3,18 @@
  1. Created an encoded user:pass pair
 
 ```
-htpasswd -nb admin password | base64 > file
+htpasswd -nBb admin password > auth
 ```
+
 
 2.  Created Kubernetes Secret
 
 ```
-kubectl create secret generic admin-secret --from-file=file
+kubectl create secret generic admin-secret --from-file=auth
 ```
+
+Kubernetes will create base64 encoded string from the given file. That's why we don't need to encoded manually in the first step. 
+
 
 3. Review Midlleware Basic Auth and Deploy it
 
@@ -19,7 +23,7 @@ kubectl create secret generic admin-secret --from-file=file
 - check Kubernetes Secret
 
 ```
-kubectl get secrets admin-secret -o jsonpath='{}' 
+kubectl get secrets admin-secret -o jsonpath='{.data.auth}'|base64 -d 
 ```
 - check Traefik Middleware
 

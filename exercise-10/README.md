@@ -1,4 +1,4 @@
-# 10. Scaleing up / down the created deployment
+# 10. Scaling up / down the created deployment
 
 ## Scale up by adding more replicas to the existing deployment
 
@@ -21,5 +21,5 @@ kubectl get deployments
 kubectl get rs
 ```
 
-- check the dashboard to see whether no of available replicas has been added 
+- check the dashboard to see whether number of available replicas have been added 
 

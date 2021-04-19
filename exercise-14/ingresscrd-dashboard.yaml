@@ -1,0 +1,17 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: dashboard
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`d.wrks.demo.traefiklabs.tech`) && PathPrefix(`/dashboard`) || PathPrefix(`/api`)
+      services:
+        - kind: TraefikService
+          name: api@internal
+      middlewares:
+        - name: default-test-auth@kubernetescrd
+  tls:
+    certResolver: le
