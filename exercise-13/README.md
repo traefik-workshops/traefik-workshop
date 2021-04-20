@@ -6,7 +6,6 @@
 htpasswd -nBb admin password > auth
 ```
 
-
 2.  Created Kubernetes Secret
 
 ```

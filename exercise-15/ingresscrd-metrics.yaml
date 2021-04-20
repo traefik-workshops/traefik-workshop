@@ -7,7 +7,7 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`m.wrks.demo.traefiklabs.tech`)
+      match: Host(`m.<FIXME>.demo.traefiklabs.tech`)
       services:
         - kind: TraefikService
           name: prometheus@internal

@@ -7,5 +7,3 @@ Update the values.yaml by:
 - set log format to JSON
 - add data persiance for ACME.json
 - add additionalArguments 
-
-

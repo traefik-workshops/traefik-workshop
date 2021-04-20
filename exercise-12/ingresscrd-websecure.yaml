@@ -1,13 +1,13 @@
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
-  name: whoami-https
+  name: whoami-crd-https
 spec:
   entryPoints:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`crd.wrks.demo.traefiklabs.tech`) || Host(`crda.wrks.demo.traefiklabs.tech`)
+      match: Host(`crd.<FIXME>.demo.traefiklabs.tech`) || Host(`crda.<FIXME>.demo.traefiklabs.tech`)
       services:
         - kind: Service
           name: whoami-svc
@@ -17,9 +17,9 @@ spec:
   tls:
     certResolver: le
     domains:
-      - main: crd.wrks.demo.traefiklabs.tech
+      - main: crd.<FXIME>.demo.traefiklabs.tech
         sans:
-          - crda.wrks.demo.traefiklabs.tech
+          - crda.<FIXME>.demo.traefiklabs.tech
     options:
       name: tlsoptions
 

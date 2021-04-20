@@ -7,7 +7,7 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`d.wrks.demo.traefiklabs.tech`) && PathPrefix(`/dashboard`) || PathPrefix(`/api`)
+      match: Host(`d.<FIXME>.demo.traefiklabs.tech`) && PathPrefix(`/dashboard`) || PathPrefix(`/api`)
       services:
         - kind: TraefikService
           name: api@internal
