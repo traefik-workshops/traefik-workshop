@@ -31,7 +31,7 @@ kubectl run -it --rm --image alpine -- sh
 curl traefik-dashboard:9000/metrics
 ```
 
-# Installing Prometheus stack using Helm 
+# 15.1. Installing Prometheus stack using Helm 
 
 We will install Kube-Prometheus-Stack with all components: Prometheus, Alert Manager, Grafana and Metrics exporter. 
 
