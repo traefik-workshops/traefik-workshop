@@ -23,7 +23,7 @@ It will create the cluster with two worker nodes and expose the port 80 and 443.
 
 ## Installing Helm
 
-Helm is the package manager for Kubernetes. Here is the link to [the official Helm documenation](https://helm.sh/docs/intro/install/) to guide how to install Helm on you local environment. 
+Helm is the package manager for Kubernetes. Here is the link to [the official Helm docs](https://helm.sh/docs/intro/install/) to guide how to install Helm3+ in your local environment. 
 
 Installing Traefik through package manger will run a preconfigured Traefik instance. It is one of the recommended approaches.
 You can start exploring Traefik and focus on its features. There is still option to deploy it manually on your Kubernets cluster. 
