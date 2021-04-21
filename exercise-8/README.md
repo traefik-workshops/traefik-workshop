@@ -13,7 +13,10 @@ kubectl apply -f redirect-scheme.yaml
 ```
 kubectl get middlewares.traefik.containo.us 
 ```
-- see the dashboard - please note, what is the name convention for the middleware we created <namespace>-<name-of-the-middleware>@<provider> 
+- see the dashboard - please note, what is the name convention for the middleware we created.
+
+The middleware name is created based on that pattern:
+\<namespace\>-\<name-of-the-middleware\>@\<provider\> 
 
 ## Note:
 

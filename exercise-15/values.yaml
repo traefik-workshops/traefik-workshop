@@ -14,7 +14,5 @@ additionalArguments:
   - "--certificatesresolvers.le.acme.email=<FIXME>"
   - "--certificatesresolvers.le.acme.storage=/data/acme.json"
   - "--metrics.prometheus=true"
-  - "--metrics.prometheus.manualrouting=true"
-
 persistence:
   enabled: true

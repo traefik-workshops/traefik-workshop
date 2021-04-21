@@ -1,12 +1,12 @@
 # 13. Kubernetes Secretes and Middleware Basic Auth
 
- 1. Created an encoded user:pass pair
+ 1. Create login credentaials using htpasswd
 
 ```
 htpasswd -nBb admin password > auth
 ```
 
-2.  Created Kubernetes Secret
+2.  Create Kubernetes Secret
 
 ```
 kubectl create secret generic admin-secret --from-file=auth

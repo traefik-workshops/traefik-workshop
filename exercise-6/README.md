@@ -18,7 +18,7 @@ Describe the Traefik pod
 kubectl describe pod <TRAEFIK-POD>
 ```
 
-Descibe the pvc:
+Describe the pvc:
 ```
 kubectl describe pvc
 ```
