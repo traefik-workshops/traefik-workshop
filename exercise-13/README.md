@@ -1,6 +1,6 @@
-# 13. Kubernetes Secretes and Middleware Basic Auth
+# 13. Kubernetes Secrets and Middleware Basic Auth
 
- 1. Create login credentaials using htpasswd
+1. Create login credentials using `htpasswd`
 
 ```
 htpasswd -nBb admin password > auth
