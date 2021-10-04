@@ -1,6 +1,7 @@
 # Getting started with Traefik on Kubernetes
 # Traefik Workshop #1
 
+The recording of this workshop is already available at Traefik's You Tube channel. Here is [the link](https://youtu.be/CL5Cxxz-yHo).
 ## Prerequisities
 
 You need to have Kubernetes cluster that you can connect to, Helm3 installed and a domain that points to the external IP address of the cluster. 
