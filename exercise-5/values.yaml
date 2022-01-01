@@ -1,17 +1,17 @@
 logs:
   general:
-    level: INFO
+    level: DEBUG
   access:
     enabled: true
-    format: json
+    format: JSON
 
 additionalArguments:
   - "--certificatesresolvers.le-staging.acme.tlschallenge=true"
-  - "--certificatesresolvers.le-staging.acme.email=<FIXME>"
+  - "--certificatesresolvers.le-staging.acme.email=simon@hovhas.se"
   - "--certificatesresolvers.le-staging.acme.storage=/data/acme.json"
   - "--certificatesresolvers.le-staging.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory"
   - "--certificatesresolvers.le.acme.tlschallenge=true"
-  - "--certificatesresolvers.le.acme.email=<FIXME>"
+  - "--certificatesresolvers.le.acme.email=simon@hovhas.se"
   - "--certificatesresolvers.le.acme.storage=/data/acme.json"
 
 persistence:

@@ -8,7 +8,7 @@ metadata:
     traefik.ingress.kubernetes.io/router.tls.certresolver: le
 spec:
   rules:
-    - host: whoami.<FIXME>.demo.traefiklabs.tech
+    - host: whoami.hemma.rubbat.se
       http:
         paths:
           - path: /

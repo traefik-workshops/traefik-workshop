@@ -6,7 +6,7 @@ metadata:
     traefik.ingress.kubernetes.io/router.entrypoints: web
 spec:
   rules:
-    - host: whoami.<FIXME>.demo.traefiklabs.tech
+    - host: whoami.hemma.rubbat.se
       http:
         paths:
           - path: /
