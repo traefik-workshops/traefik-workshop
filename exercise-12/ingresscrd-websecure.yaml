@@ -7,7 +7,7 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`crd.<FIXME>.demo.traefiklabs.tech`) || Host(`crda.<FIXME>.demo.traefiklabs.tech`)
+      match: Host(`crd.limmat.se`) || Host(`crda.limmat.se`)
       services:
         - kind: Service
           name: whoami-svc
@@ -17,9 +17,9 @@ spec:
   tls:
     certResolver: le
     domains:
-      - main: crd.<FIXME>.demo.traefiklabs.tech
+      - main: crd.limmat.se
         sans:
-          - crda.<FIXME>.demo.traefiklabs.tech
+          - crda.limmat.se
     options:
       name: tlsoptions
 
@@ -54,11 +54,11 @@ metadata:
   name: security
 spec:
   headers:
-    frameDeny: true               # the page can not be loaded in an iframe, Set frameDeny to true to add the X-Frame-Options header with the value of DENY.
-    sslRedirect: true             # The sslRedirect only allow HTTPS requests when set to true.
-    browserXssFilter: true        # Limit XSS, Set browserXssFilter to true to add the X-XSS-Protection header with the value 1; mode=block.
-    contentTypeNosniff: true      # Do not detect Mime type by browser, Set contentTypeNosniff to true to add the X-Content-Type-Options header with the value nosniff.
+    frameDeny: true # the page can not be loaded in an iframe, Set frameDeny to true to add the X-Frame-Options header with the value of DENY.
+    sslRedirect: true # The sslRedirect only allow HTTPS requests when set to true.
+    browserXssFilter: true # Limit XSS, Set browserXssFilter to true to add the X-XSS-Protection header with the value 1; mode=block.
+    contentTypeNosniff: true # Do not detect Mime type by browser, Set contentTypeNosniff to true to add the X-Content-Type-Options header with the value nosniff.
     # HSTS HTTP Strict Transport Security
-    stsIncludeSubdomains: true    # If the stsIncludeSubdomains is set to true, the includeSubDomains directive is appended to the Strict-Transport-Security header. all subdomains have to HSTS complained
-    stsPreload: true              # https://hstspreload.org/
-    stsSeconds: 31536000          #  To be able to use HSTS Preloading, this parameter must be at least 31536000 second
+    stsIncludeSubdomains: true # If the stsIncludeSubdomains is set to true, the includeSubDomains directive is appended to the Strict-Transport-Security header. all subdomains have to HSTS complained
+    stsPreload: true # https://hstspreload.org/
+    stsSeconds: 31536000 #  To be able to use HSTS Preloading, this parameter must be at least 31536000 second

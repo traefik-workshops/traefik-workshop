@@ -7,7 +7,7 @@ spec:
     - web
   routes:
     - kind: Rule
-      match: Host(`crd.<FIXME>.demo.traefiklabs.tech`)
+      match: Host(`crd.limmat.se`)
       services:
         - kind: Service
           name: whoami-svc
