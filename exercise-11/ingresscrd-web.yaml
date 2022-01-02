@@ -7,7 +7,7 @@ spec:
     - web
   routes:
     - kind: Rule
-      match: Host(`whoami.hemma.rubbat.se`)
+      match: Host(`whoami.hlimmat.se`)
       services:
         - kind: Service
           name: whoami-svc
